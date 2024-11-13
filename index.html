@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-  <canvas id="canvas"></canvas>
+
+  <div class=" main w-full">
+    <nav class="fixed top-0 left-0 px-10 py-5">
+      <img class="w-[160px] mix-blend-screen [filter:contrast(150%)_saturate(150%)]" src="cyberpunk_img-(1).webp" alt="">
+    </nav>
+    <div class="w-full h-full overflow-hidden">
+      <img class="absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 mix-blend-screen [filter:contrast(150%)_saturate(150%)]" src="https://preview.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1080&crop=smart&auto=webp&s=0e62e74ba8b5ef6191228e855079491cfa56f57b" alt="">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="w-full h-screen bg-zinc-800"></div>
+  </div>
+
 
   <script type="module" src="main.js"></script>
 </body>
+
 </html>
