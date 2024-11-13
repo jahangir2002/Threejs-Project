@@ -8,6 +8,10 @@ import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
 import { RGBShiftShader } from 'three/examples/jsm/shaders/RGBShiftShader.js';
 import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
 import gsap from 'gsap';
+import LocomotiveScroll from 'locomotive-scroll';
+
+const locomotiveScroll = new LocomotiveScroll();
+
 
 // Scene
 const scene = new THREE.Scene();
@@ -68,8 +72,8 @@ composer.addPass(rgbShiftPass);
 window.addEventListener('mousemove', (e) => {
 
   if (model) { 
-    const rotationX = (e.clientX / window.innerWidth - 0.5) * Math.PI * .3; // to get the mouse position and set the rotation of the model
-    const rotationY = (e.clientY / window.innerHeight - 0.5) * Math.PI * .3; 
+    const rotationX = (e.clientX / window.innerWidth - 0.5) * Math.PI * .10; // to get the mouse position and set the rotation of the model
+    const rotationY = (e.clientY / window.innerHeight - 0.5) * Math.PI * .10; 
     gsap.to(model.rotation, {
       x: rotationY,
       y: rotationX,
@@ -80,7 +84,7 @@ window.addEventListener('mousemove', (e) => {
 
     // model.rotation.y = rotationX; // to set the rotation of the model
     // model.rotation.x = rotationY; // to set the rotation of the model
-    
+
   }
 
   
