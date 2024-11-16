@@ -1,7 +1,10 @@
 
 ## Cyberpunk Hero Section
 
-[Cyberpunk Hero Section]([https://linktodocumentation](https://cyberpunck.netlify.app/))
+"To view, please click on the Cyberpunk and wait for 5 to 6 seconds." 
+
+[Cyberpunk](https://cyberpunck.netlify.app/)
+
 
 
 ## Screenshot
